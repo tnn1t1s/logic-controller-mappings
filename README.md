@@ -39,6 +39,12 @@ For detailed findings, see the [PROGRESS.md](PROGRESS.md) document.
    python3 src/decode_logic_cs.py ./samples/my_backup.cs
    ```
 
+## Controller Mappings
+
+We are developing standardized mappings for popular MIDI controllers:
+
+- [Korg nanoKONTROL2](controllers/nanokontrol2/) - For SSL Channel Strip
+
 ## Contributing
 
 This is an open research project. If you'd like to contribute, please check the [CONTRIBUTING.md](CONTRIBUTING.md) guide and look at open issues.
