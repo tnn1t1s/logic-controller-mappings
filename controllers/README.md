@@ -4,25 +4,29 @@ This directory contains documentation and mapping templates for different MIDI c
 
 ## Available Controllers
 
-- [Korg nanoKONTROL2](nanokontrol2_mapping.md) - Default mapping reference for the Korg nanoKONTROL2
+- [Korg nanoKONTROL2](nanokontrol2/) - Maps to SSL Channel Strip plugin
 
-## Mapping Format
+## Directory Structure
 
-Each controller will have:
+Each controller has its own subdirectory containing:
 
-1. A documentation file (`.md`) describing the controller's default MIDI implementation
-2. A mapping template (`.json`) that can be applied to Logic Pro's controller assignment file
+1. A `README.md` with documentation about the controller's default MIDI implementation
+2. JSON mapping templates (e.g., `ssl_mapping_korg.json`) that define parameter mappings
 
 ## How to Use
 
 1. Find your controller in the list above
-2. Review the default MIDI implementation
-3. Use the mapping tools to apply the controller template to your Logic Pro setup
+2. Review its default MIDI implementation in the README.md
+3. Use the JSON template as a basis for mapping to plugins in Logic Pro
+4. Apply using the mapping tools (coming soon)
 
 ## Contributing
 
-To add a new controller, please create:
+To add a new controller, please:
 
-1. A markdown documentation file with the controller's default MIDI implementation
-2. A JSON mapping template that follows our schema (see [CONTRIBUTING.md](../CONTRIBUTING.md))
-3. Update this README to include your controller in the list
+1. Create a directory with your controller's name (`controllers/your_controller_name/`)
+2. Add a `README.md` with the controller's default MIDI implementation details
+3. Create JSON mapping templates for supported plugins
+4. Update this README to include your controller in the list
+
+For more details, see the main [CONTRIBUTING.md](../CONTRIBUTING.md).
