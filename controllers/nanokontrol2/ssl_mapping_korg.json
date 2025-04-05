@@ -1,0 +1,90 @@
+{
+  "name": "SSL Channel Strip Mapping for Korg nanoKONTROL2",
+  "description": "Maps Korg nanoKONTROL2 to Softube/UAD SSL Channel Strip in Logic Pro",
+  "version": "0.1.0",
+  "controller": {
+    "name": "Korg nanoKONTROL2",
+    "default_channel": 1
+  },
+  "plugin": {
+    "name": "SSL Channel Strip",
+    "manufacturer": "Softube/UAD",
+    "osc_prefix": "TBD"
+  },
+  "mappings": [
+    {
+      "controller_control": "Knob 1",
+      "controller_cc": 16,
+      "plugin_parameter": "Input Gain",
+      "osc_path": "TBD",
+      "min_value": 0,
+      "max_value": 127,
+      "default_value": 64
+    },
+    {
+      "controller_control": "Knob 2",
+      "controller_cc": 17,
+      "plugin_parameter": "Low EQ Gain",
+      "osc_path": "TBD",
+      "min_value": 0,
+      "max_value": 127,
+      "default_value": 64
+    },
+    {
+      "controller_control": "Knob 3",
+      "controller_cc": 18,
+      "plugin_parameter": "Mid EQ Gain",
+      "osc_path": "TBD",
+      "min_value": 0,
+      "max_value": 127,
+      "default_value": 64
+    },
+    {
+      "controller_control": "Knob 4",
+      "controller_cc": 19,
+      "plugin_parameter": "High EQ Gain",
+      "osc_path": "TBD",
+      "min_value": 0,
+      "max_value": 127,
+      "default_value": 64
+    },
+    {
+      "controller_control": "Knob 5",
+      "controller_cc": 20,
+      "plugin_parameter": "Comp Threshold",
+      "osc_path": "TBD",
+      "min_value": 0,
+      "max_value": 127,
+      "default_value": 64
+    },
+    {
+      "controller_control": "Knob 6",
+      "controller_cc": 21,
+      "plugin_parameter": "Comp Ratio",
+      "osc_path": "TBD",
+      "min_value": 0,
+      "max_value": 127,
+      "default_value": 64
+    },
+    {
+      "controller_control": "Knob 7",
+      "controller_cc": 22,
+      "plugin_parameter": "Output Gain",
+      "osc_path": "TBD",
+      "min_value": 0,
+      "max_value": 127,
+      "default_value": 64
+    },
+    {
+      "controller_control": "Knob 8",
+      "controller_cc": 23,
+      "plugin_parameter": "Bypass",
+      "osc_path": "TBD",
+      "min_value": 0,
+      "max_value": 1,
+      "default_value": 0,
+      "is_toggle": true
+    }
+  ],
+  "notes": "This mapping assumes the nanoKONTROL2 is using factory settings with no customization via the Korg Editor. The OSC paths are marked as 'TBD' and will need to be determined through research on Logic's controller assignment file format."
+}
